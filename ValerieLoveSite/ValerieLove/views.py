@@ -6,5 +6,5 @@ from django.http import HttpResponse
 # request handler
 # action
 
-def say_hello(request):
-    return render(request, 'home.html', {'name': 'Valerie'})
+def render_homepage(request):
+    return render(request, 'home.html') #TODO: Figure out what context is supposed to go here
